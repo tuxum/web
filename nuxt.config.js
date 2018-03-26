@@ -25,7 +25,8 @@ module.exports = {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth',
+    '@nuxtjs/vuetify'
   ],
 
   axios: {
