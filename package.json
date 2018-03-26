@@ -13,9 +13,10 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^1.0.0",
+    "@nuxtjs/auth": "^4.0.0-rc.3",
+    "@nuxtjs/axios": "^5.1.1",
     "express": "^4.15.3",
-    "@nuxtjs/axios": "^5.0.0"
+    "nuxt": "^1.0.0"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",
