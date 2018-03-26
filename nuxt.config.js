@@ -35,6 +35,11 @@ module.exports = {
 
   auth: {},
 
+  vuetify: {
+    theme: {}
+    css: true
+  },
+
   build: {
     extend(config, ctx) {
       // Run ESLint on save
