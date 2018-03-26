@@ -3,9 +3,6 @@ const pkg = require('./package')
 module.exports = {
   mode: 'universal',
 
-  /*
-  ** Headers of the page
-  */
   head: {
     title: pkg.name,
     meta: [
@@ -18,45 +15,26 @@ module.exports = {
     ]
   },
 
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#3B8070' },
 
-  /*
-  ** Global CSS
-  */
   css: [
   ],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [
   ],
 
-  /*
-  ** Nuxt.js modules
-  */
   modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/auth'
   ],
 
-  /*
-  ** Axios module configuration
-  */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: process.env.API_BASE_URL,
   },
 
-  /*
-  ** Build configuration
-  */
+  auth: {},
+
   build: {
-    /*
-    ** You can extend webpack config here
-    */
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
