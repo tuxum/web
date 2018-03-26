@@ -25,7 +25,8 @@ module.exports = {
 
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/auth'
+    '@nuxtjs/auth',
+    '@nuxtjs/vuetify'
   ],
 
   axios: {
@@ -33,6 +34,11 @@ module.exports = {
   },
 
   auth: {},
+
+  vuetify: {
+    theme: {}
+    css: true
+  },
 
   build: {
     extend(config, ctx) {
