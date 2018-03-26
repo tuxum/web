@@ -28,7 +28,9 @@ module.exports = {
     '@nuxtjs/auth'
   ],
 
-  axios: {},
+  axios: {
+    baseURL: process.env.API_BASE_URL,
+  },
 
   auth: {},
 
